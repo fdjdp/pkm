@@ -1,0 +1,12 @@
+UNIT = mm
+[g_cc] = 0
+
+[cos30] = 0.866
+[tan30] = 0.5775
+
+[cardtxt] = ""
+
+MACRO = mg_addTxt, (txt), (fontsize), (fonttype), (colorname), (align)
+   [cardtxt]=CONCAT1([cardtxt],"<p align=",(align),"><font size='",(fontsize),"pt' face='",(fonttype),"' color='",(colorname),"'>")
+   [cardtxt]=CONCAT1([cardtxt],(txt),"</font></p>")
+END

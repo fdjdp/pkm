@@ -14,6 +14,8 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+image/*
+*.pdf
 # =========================
 # Operating System Files
 # =========================

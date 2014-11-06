@@ -1,0 +1,136 @@
+INCLUDE = "i_colors.txt"
+INCLUDE = "i_common.txt"
+INCLUDE = "h_pokemon.nde" 
+
+[g_cc] = AUTORANGE(1)
+m_type_Roc = "..\image\28.png" , "MEDIUM"
+m_name=      "Sablaireau"
+m_pv =       "3"
+m_atk =      "3"
+m_force =    FeuElc
+m_faiblesse= 
+m_capaName = "(soutien) Jet de Sable"
+m_capaTxt =  "Le pokémon adverse n'attaque pas lors du premier round du combat."
+m_capa2 =    "EXPLO 2 (grotte)"
+m_evol=      0
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Poi = "..\image\29.png" , "VSMALL"
+m_name=      "Nidoran"
+m_pv =       "2"
+m_atk =      "2"
+m_force =    CmbPln
+m_faiblesse= 
+m_capaName = "Epines"
+m_capaTxt =  "Lorsqu'un pokémon inflige des dégâts à Nidoran, il subit 1 dégât."
+m_capa2 =    "MVT 1"
+m_evol=      1
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Poi = "..\image\30.png" , "MEDIUM"
+m_name=      "Nidorina"
+m_pv =       "3"
+m_atk =      "2"
+m_force =    CmbPln
+m_faiblesse= 
+m_capaName = "Epines"
+m_capaTxt =  "Lorsqu'un pokémon inflige des dégâts à Nidorina, il subit 1 dégât."
+m_capa2 =    "MVT 2"
+m_evol=      2
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Poi = "..\image\33.png" , "MEDIUM"
+m_name=      "Nidorino"
+m_pv =       "2"
+m_atk =      "3"
+m_force =    CmbPln
+m_faiblesse= 
+m_capaName = "Epines"
+m_capaTxt =  "Lorsqu'un pokémon inflige des dégâts à Nidorino, il subit 1 dégât."
+m_capa2 =    "MVT 2"
+m_evol=      2
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Poi = "..\image\31.png" , "LARGE"
+m_name=      "Nidoqueen"
+m_pv =       "5"
+m_atk =      "3"
+m_force =    CmbPln
+m_faiblesse= 
+m_capaName = "Plaquage"
+m_capaTxt =  "Quand Nidoqueen attaque, elle inflige autant de dégâts que ses PV."
+m_capa2 =    "MVT 2"
+m_evol=      0
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Poi = "..\image\34.png" , "LARGE"
+m_name=      "Nidoking"
+m_pv =       "3"
+m_atk =      "5"
+m_force =    CmbPln
+m_faiblesse= 
+m_capaName = "Koud'korn"
+m_capaTxt =  "."
+m_capa2 =    "MVT 2"
+m_evol=      0
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Nrm = "..\image\35.png" , "MEDIUM"
+m_name=      "Mélofée"
+m_pv =       "3"
+m_atk =      "1"
+m_force =    Psy
+m_faiblesse= Roc
+m_capaName = "Métronome"
+m_capaTxt =  "Mélofée utilise les paramètres d'attaque de son adversaire (Atk, forces, faiblesses)."
+m_capa2 =    "Explo 1"
+m_evol=      2
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Nrm = "..\image\36.png" , "MEDIUM"
+m_name=      "Mélodelfe"
+m_pv =       "5"
+m_atk =      "1"
+m_force =    Psy
+m_faiblesse= Roc
+m_capaName = "Métronome"
+m_capaTxt =  "Mélodelfe utilise les paramètres d'attaque de son adversaire (Atk, forces, faiblesses)."
+m_capa2 =    "Explo 2"
+m_evol=      0
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Feu = "..\image\37.png" , "SMALL"
+m_name=      "Goupix"
+m_pv =       "2"
+m_atk =      "2"
+m_force =    PoiPln
+m_faiblesse= Roc
+m_capaName = "(soutien) Danse du Feu"
+m_capaTxt =  "Les pokémons de type FEU ont +1 Atk. Les attaques de type EAU ne sont jamais super-efficaces."
+m_capa2 =    "MVT 1"
+m_evol=      3
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Feu = "..\image\38.png" , "MEDIUM"
+m_name=      "Feunard"
+m_pv =       "4"
+m_atk =      "3"
+m_force =    PoiPln
+m_faiblesse= Roc
+m_capaName = "(soutien) Danse du Feu"
+m_capaTxt =  "Les pokémons de type FEU ont +1 Atk. Les attaques de type EAU ne sont jamais super-efficaces."
+m_capa2 =    "MVT 2"
+m_evol=      2
+m_version =  1
+
+
+

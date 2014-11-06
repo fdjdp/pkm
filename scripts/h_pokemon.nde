@@ -1,0 +1,178 @@
+'--------CARD TEMPLATE
+[card_w] = 57
+[card_h] = 89
+cardsize = [card_w], [card_h]
+border = rectangle, #000000, 1
+[allcards] = 1-9
+
+ICON = [allcards], Poi, "..\image\i_poi.png"
+ICON = [allcards], Nrm, "..\image\i_nrm.png"
+ICON = [allcards], Feu, "..\image\i_feu.png"
+ICON = [allcards], Eau, "..\image\i_eau.png"
+ICON = [allcards], Pln, "..\image\i_pln.png"
+ICON = [allcards], Psy, "..\image\i_psy.png"
+ICON = [allcards], Cmb, "..\image\i_cmb.png"
+ICON = [allcards], Roc, "..\image\i_roc.png"
+ICON = [allcards], Elc, "..\image\i_elc.png"
+
+MACRO = m_image, (imagepath), (size)
+   IF = (size) = "SMALL"
+      IMAGE = [g_cc], (imagepath), 8, 22, 41, 40, 0, NP
+   ELSEIF = (size) = "MEDIUM"
+      IMAGE = [g_cc], (imagepath), 5, 19, 47, 46, 0, NP
+   ELSEIF = (size) = "LARGE"
+      IMAGE = [g_cc], (imagepath), 1, 14, 55, 56, 0, NP
+   ELSEIF = (size) = "VSMALL"
+      IMAGE = [g_cc], (imagepath), 11, 25, 35, 34, 0, NP
+   ENDIF
+END
+
+MACRO = im_icon, (type)
+   ICONS = [g_cc],(type) , 44.5, 58.5, 9, 9, 8, 8, 0, T, center, center, 100, 3
+END
+
+MACRO = m_force, (forces)
+   FONT="Segoe Print", 6, BT, [col_Black]
+   TEXT = [g_cc], "SUPER EFFICACE", 12, 0, 28, 8, left, top
+   ICONS = [g_cc],(forces) , 12, 3, 19, 7, 6 ,6, 0, T, center, center, 100, 3
+END
+
+MACRO = m_faiblesse, (forces)
+   FONT="Segoe Print", 6, BT, [col_Black]
+  ' TEXT = [g_cc], "peu efficace", 30, 8.5, 28, 8, left, top
+   TEXT = [g_cc], "peu efficace", 33, 0, 28, 8, left, top
+   LINE = [g_cc], 32, 3, 32, 9, [col_Black], 0.5
+   ICONS = [g_cc],(forces) , 32, 3, 15, 6, 5, 5, 0, T, center, center, 100, 3
+END
+
+MACRO = m_name, (name)
+   FONT="Segoe Print", 20, BT, #000000
+   TEXT = [g_cc], (name), 4, 57, 45, 13, left, center
+END
+
+MACRO = m_pv, (pv)
+   FONT="Segoe Print", 45, BT, #000099
+   TEXT = [g_cc], (pv), 44, 0, 13, 13, center, center
+END
+
+MACRO = m_atk, (pv)
+   FONT="Segoe Print", 45, BT, #800000
+   TEXT = [g_cc], (pv), 0, 0, 13, 13, center, center
+END
+
+MACRO  = m_type_poi, (img), (size)
+   RECTANGLE = [g_cc], 0.5, 0.5, 56, 88, #CCCCFF
+   RECTANGLE = [g_cc], 3.5, 17, 50, 50, [col_White]
+   m_image = (img), (size)
+   im_icon = Poi
+END
+
+MACRO  = m_type_pln, (img), (size)
+   RECTANGLE = [g_cc], 0.5, 0.5, 56, 88, #99FF99
+   RECTANGLE = [g_cc], 3.5, 17, 50, 50, [col_White]
+ '  RECTANGLE = [g_cc], 46, 68, 7.5, 19, [col_White]
+   m_image = (img), (size)
+   im_icon = Pln
+END
+
+MACRO  = m_type_feu, (img), (size)
+   RECTANGLE = [g_cc], 0.5, 0.5, 56, 88, #FFBD91
+   RECTANGLE = [g_cc], 3.5, 17, 50, 50, [col_White]
+   m_image = (img), (size)
+   im_icon = Feu
+END
+
+MACRO  = m_type_eau, (img), (size)
+   RECTANGLE = [g_cc], 0.5, 0.5, 56, 88, #66FFFF
+   RECTANGLE = [g_cc], 3.5, 17, 50, 50, [col_White]
+   m_image = (img), (size)
+   im_icon = Eau
+END
+
+MACRO  = m_type_psy, (img), (size)
+   RECTANGLE = [g_cc], 0.5, 0.5, 56, 88, #FFADD6
+   RECTANGLE = [g_cc], 3.5, 17, 50, 50, [col_White]
+   m_image = (img), (size)
+   im_icon = Psy
+END
+
+MACRO  = m_type_elc, (img), (size)
+   RECTANGLE = [g_cc], 0.5, 0.5, 56, 88, #FFFF99
+   RECTANGLE = [g_cc], 3.5, 17, 50, 50, [col_White]
+   m_image = (img), (size)
+   im_icon = Elc
+END
+
+MACRO  = m_type_roc, (img), (size)
+   RECTANGLE = [g_cc], 0.5, 0.5, 56, 88, #C2AD99
+   RECTANGLE = [g_cc], 3.5, 17, 50, 50, [col_White]
+   m_image = (img), (size)
+   im_icon = Roc
+END
+
+MACRO  = m_type_nrm, (img), (size)
+   RECTANGLE = [g_cc], 0.5, 0.5, 56, 88, #E6E6E6
+   RECTANGLE = [g_cc], 3.5, 17, 50, 50, [col_White]
+   m_image = (img), (size)
+   im_icon = Nrm
+END
+
+
+MACRO = m_capaName, (name)
+   FONT="Segoe Print", 9, BT, [col_Black]
+   TEXT = [g_cc], (name), 2, 67, 50, 8, left, top
+END
+
+MACRO = m_capaTxt, (name)
+   FONT="Segoe Print", 7.5, TN, [col_Black]
+   TEXT = [g_cc], (name), 2, 72.5, 54, 30, left, wwtop
+END
+
+MACRO = m_evol, (evol)
+   IF = (evol) = 1
+      im_evol_1
+   ELSEIF = (evol) = 2 
+      im_evol_2
+   ELSEIF = (evol) = 3
+      im_evol_3 
+   ELSEIF = (evol) = 4
+      im_evol_4 
+   ELSEIF = (evol) = 5
+      im_evol_5
+   ENDIF
+END
+
+MACRO = im_evol_1
+   RECTANGLE = [g_cc], 4.5, 15.5, 3, 3, [col_Black]
+END
+
+MACRO = im_evol_2
+   RECTANGLE = [g_cc], 8.5, 15.5, 3, 3, [col_Black]
+   im_evol_1
+END
+
+MACRO = im_evol_3
+   RECTANGLE = [g_cc], 12.5, 15.5, 3, 3, [col_Black]
+   im_evol_2
+END
+
+MACRO = im_evol_4
+   RECTANGLE = [g_cc], 16.5, 15.5, 3, 3, [col_Black]
+   im_evol_3
+END
+
+MACRO = im_evol_5
+   RECTANGLE = [g_cc], 20.5, 15.5, 3, 3, [col_Black]
+   im_evol_4
+END
+
+MACRO = m_version, (version)
+   FONT="Arial", 5, TN, [col_Black]
+   TEXT = [g_cc], (version), 2, 86.5, 45, 30, left, wwtop
+END
+
+MACRO = m_capa2, (capa2)
+   FONT="Arial", 11, TNB, [col_Black]
+   TEXT = [g_cc], (capa2), 13, 12, 31, 20, center, wwtop
+END
+
