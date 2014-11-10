@@ -117,6 +117,13 @@ MACRO  = m_type_nrm, (img), (size)
    im_icon = Nrm
 END
 
+MACRO  = m_type_cmb, (img), (size)
+   RECTANGLE = [g_cc], 0.5, 0.5, 56, 88, #CD8888
+   RECTANGLE = [g_cc], 3.5, 17, 50, 50, [col_White]
+   m_image = (img), (size)
+   im_icon = Cmb
+END
+
 
 MACRO = m_capaName, (name)
    FONT="Segoe Print", 9, BT, [col_Black]
@@ -124,7 +131,7 @@ MACRO = m_capaName, (name)
 END
 
 MACRO = m_capaTxt, (name)
-   FONT="Segoe Print", 7.5, TN, [col_Black]
+   FONT="Segoe Print", 7, TN, [col_Black]
    TEXT = [g_cc], (name), 2, 72.5, 54, 30, left, wwtop
 END
 

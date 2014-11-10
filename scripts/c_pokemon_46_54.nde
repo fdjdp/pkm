@@ -1,0 +1,122 @@
+INCLUDE = "i_colors.txt"
+INCLUDE = "i_common.txt"
+INCLUDE = "h_pokemon.nde" 
+
+[g_cc] = AUTORANGE(1)
+m_type_Pln = "..\image\47.png" , "SMALL"
+m_name=      "Parasect"
+m_atk =      "1"
+m_pv =       "4"
+m_force =    EauRocPsy
+m_faiblesse= Poi
+m_capaName = "Spore"
+m_capaTxt =  "Lorsque Parasect est blessé, lancez 3 dés. Pour chaque réussite, l'adversaire est empoisonné (1) et paralysé (1).
+m_capa2 =    "MVT 1 (forêt)"
+m_evol=      0
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Poi = "..\image\48.png" , "SMALL"
+m_name=      "Mimitoss"
+m_atk =      "1"
+m_pv =       "3"
+m_force =    CmbPlnPsy
+m_faiblesse= 
+m_capaName = "Rayon Signal"
+m_capaTxt =  "Lorsque Mimitoss attaque, lancez un dé. En cas de réussite, l'adversaire est paralysé (1), sinon il est confus (1).  "
+m_capa2 =    "EXPLO 1 (route)"
+m_evol=      2
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Poi = "..\image\49.png" , "MEDIUM"
+m_name=      "Aéromite"
+m_atk =      "2"
+m_pv =       "4"
+m_force =    CmbPlnPsy
+m_faiblesse= 
+m_capaName = "Rayon Signal"
+m_capaTxt =  "Lorsqu'Aéromite attaque, lancez un dé. En cas de réussite, l'adversaire est paralysé (1), sinon il est confus (1).  "
+m_capa2 =    "SOIN 1"
+m_evol=      0
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Roc = "..\image\50.png" , "VSMALL"
+m_name=      "Taupiqueur"
+m_atk =      "2"
+m_pv =       "2"
+m_force =    FeuElc
+m_faiblesse= 
+m_capaName = "(carte) Tunnel"
+m_capaTxt =  "Depuis une case de grotte, déplacez vous immédiatement sur une case non-grotte connexe à votre case."
+m_capa2 =    "EXPLO 1 (grotte)"
+m_evol=      3
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Roc = "..\image\51.png" , "MEDIUM"
+m_name=      "Triopiqueur"
+m_atk =      "4"
+m_pv =       "3"
+m_force =    FeuElc
+m_faiblesse= 
+m_capaName = "(!) Séisme"
+m_capaTxt =  "Tous les pokémons, révélés ou non, subissent 1 dégât."
+m_capa2 =    "EXPLO 2 (grotte)"
+m_evol=      0
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Nrm = "..\image\52.png" , "MEDIUM"
+m_name=      "Miaouss"
+m_atk =      "2"
+m_pv =       "2"
+m_force =    
+m_faiblesse= Roc
+m_capaName = "Jackpot"
+m_capaTxt =  "Lorsque Miaouss inflige des dégâts, volez un objet de votre adversaire."
+m_capa2 =    "POKÉ$ 1"
+m_evol=      2
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Nrm = "..\image\53.png" , "MEDIUM"
+m_name=      "Persian"
+m_atk =      "2"
+m_pv =       "4"
+m_force =    
+m_faiblesse= Roc
+m_capaName = "Bluff"
+m_capaTxt =  "Vous pouvez payer jusqu'à 3$ pour augmenter son attaque d'autant."
+m_capa2 =    "POKÉ$ 2"
+m_evol=      0
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Eau = "..\image\54.png" , "MEDIUM"
+m_name=      "Psykokwak"
+m_atk =      "1"
+m_pv =       "2"
+m_force =    RocFeuPsy
+m_faiblesse= Eau
+m_capaName = "(!) Grincement"
+m_capaTxt =  "Jusqu'à la fin du round, les textes de tous les pokémon sont ignorés."
+m_capa2 =    "SOIN 1"
+m_evol=      2
+m_version =  1
+
+[g_cc] = AUTORANGE(1)
+m_type_Eau = "..\image\55.png" , "MEDIUM"
+m_name=      "Akwakwak"
+m_atk =      "3"
+m_pv =       "4"
+m_force =    RocFeu
+m_faiblesse= Eau
+m_capaName = "(!) Grincement"
+m_capaTxt =  "Jusqu'à la fin du round, les textes de tous les pokémon sont ignorés."
+m_capa2 =    "EXPLO 2 (eau)"
+m_evol=      0
+m_version =  1
+
+
